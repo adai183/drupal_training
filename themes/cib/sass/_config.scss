@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'gibsonregular';
+    src: url('fonts/gibson-regular-webfont.eot');
+    src: url('fonts/gibson-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson-regular-webfont.woff2') format('woff2'),
+         url('fonts/gibson-regular-webfont.woff') format('woff'),
+         url('fonts/gibson-regular-webfont.ttf') format('truetype'),
+         url('fonts/gibson-regular-webfont.svg#gibsonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gibsonlight';
+    src: url('fonts/gibson-light-webfont.eot');
+    src: url('fonts/gibson-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson-light-webfont.woff2') format('woff2'),
+         url('fonts/gibson-light-webfont.woff') format('woff'),
+         url('fonts/gibson-light-webfont.ttf') format('truetype'),
+         url('fonts/gibson-light-webfont.svg#gibsonlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+@font-face {
+    font-family: 'open-sans';
+    src: url('fonts/gibson-regular-webfont.eot');
+    src: url('fonts/gibson-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gibson-regular-webfont.woff2') format('woff2'),
+         url('fonts/gibson-regular-webfont.woff') format('woff'),
+         url('fonts/gibson-regular-webfont.ttf') format('truetype'),
+         url('fonts/gibson-regular-webfont.svg#gibsonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+**/
+
+$font_open_sans: 'Open Sans', sans-serif;
+$font_roboto: 'Roboto Slab', serif;
+$font_roboto_light: 'gibsonlight';
+
+
+/** COLORS **/
+$color_red:  #ec1822;
+$color_turquoise: #00c7ab;
+$color_clear-green:  #e6f9f6;
+$color_dark_grey: #333333;
+$color_medium_gey: #666666;
+$color_medium_grey_light: #999999;
+$color_clear_grey: #cccccc;
+$color_clear_grey_light: #f0f0f0;
+$color_white:  #ffffff;
+$color_purple:  #c08de0;
+$color_blue: #7cbaf3;
+$color_green: #b6d017;
+$color_clear_red: #e27c72;
+$color_orange:  #f8b835;
+
+
+/** Font sizes **/
+$font_size_1: 40px;
+$font_size_2: 20px;
+$font_size_3: 16px;
+$font_size_4: 14px;
+
+/* MIXINS */
+@for $i from 1 through 10 {
+    $margin: $i * 10;
+
+    .margin-top-#{$i} {
+        margin-top: #{$margin}px !important;
+    }
+    .margin-bottom-#{$i} {
+        margin-bottom: #{$margin}px !important;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: #{$margin}px !important;
+    }
+    .padding-bottom-#{$i} {
+        padding-bottom: #{$margin}px !important;
+    }
+}
+
+/** EXTENDS **/
+.font_type_nav{
+    font-family: $font_roboto;
+    font-size: $font_size_3;
+    line-height: 1.4;
+    color: $color_dark_grey;
+}
+
+.font_type_home{
+    font-family: $font_open_sans;
+    font-size: $font_size_3;
+    color: $color_medium_grey_light;
+}
+
+.font_type_section_title {
+    font-family: $font_roboto;
+	font-size: $font_size_2;
+	color: $color_dark_grey;
+    a{
+        font-family: OpenSans;
+    	font-size: $font_size_3;
+    	line-height: 1.8;
+    	color: $color_turquoise;
+    }
+}
+
+.font_type_footer_title{
+    font-family: $font_roboto;
+    font-size: $font_size_2;
+    color: $color_dark_grey;
+}
+
+/** General **/
+
+body{
+    @extend .font_type_home;
+
+    .container-fluid{
+        max-width: 1250px;
+    }
+
+    .container-fluid.fullwidth{
+        max-width: 100%;
+    }
+
+    .container-fluid.-carousel{
+        max-width:  1250px;
+
+    }
+}
+
+
+a{
+    color: $color_turquoise;
+    &:hover{
+    	color: $color_turquoise !important;
+        text-decoration: none !important;
+    }
+}
+
+p{
+    text-align: justify;
+}
+
+.top-link a{
+    color: $color_medium_grey_light;
+}
+
+/** Forms **/
+input{
+    &:focus{
+        border-color: $color_turquoise !important;
+    }
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.button-primary{
+    border-radius: 30px;
+    background-color: $color_turquoise;
+    border: solid 1px #00c7ab;
+    border: solid 1px $color_turquoise;
+    span{
+        font-family: $font_open_sans;
+        font-size: $font_size_2;
+        font-weight: lighter;
+        line-height: 1.2;
+        color: $color_white;
+        margin-left: 10px;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+.button-secondary{
+    width: 140px;
+    height: 60px;
+    border-radius: 30px !important;
+    background-color: $color_white;
+    border: solid 1px $color_turquoise;
+    font-family: $font_open_sans;
+    font-weight: bolder;
+	font-size: $font_size_2;
+	line-height: 1.2;
+	color: $color_turquoise;
+
+    &:hover{
+        color: $color_turquoise;
+        background-color: $color_white;
+        border: solid 1px $color_turquoise;
+        opacity: 0.8;
+    }
+}
+
+.button-selector{
+    height: 74px;
+    text-align: center;
+    background-color:$color_white;
+    border: solid 1px $color_clear_grey_light;
+    font-family: $font_open_sans;
+	font-size:  $font_size_3;
+	line-height: 1.2;
+	color: $color_dark_grey;
+    div{
+        margin-top: 28px;
+    }
+    &:hover{
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    &.active{
+        border: solid 1px $color_turquoise;
+    }
+}
+
+/** social buttons **/
+.button-facebook{
+    padding-top: 8px;
+    text-align: center;
+    width: 241px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px #435fa0;
+    font-family: $font_open_sans;
+	font-size:$font_size_3;
+	color: #435fa0;
+}
+
+.button-twitter{
+    padding-top: 8px;
+    text-align: center;
+    width: 222px;
+    height: 44px;
+    border-radius: 100px;
+    border: solid 1px #38a5ea;
+    font-family: $font_open_sans;
+	font-size: $font_size_3;
+	color: #38a5ea;
+
+
+}
+
+/** General Layout **/
+.section-title{
+    margin-top: 40px;
+    @extend .font_type_section_title;
+}
+
+.marker{
+    display: inline-block;
+    margin-right: 8px;
+    width: 2px;
+    height: 19px;
+    background-color: #ec111a;
+}
+
+.jumbotron{
+    height: 160px;
+    border-bottom: solid 3px #e72b22;
+    font-family: $font_roboto;
+	font-size: $font_size_1;
+	line-height: 1.5;
+	color: $color_dark_grey;
+    &.dep1{
+        background-image: url('../img/i-l-u.png');
+        border-bottom: solid 3px #bd8de3;
+    }
+    &.about{
+        background-image: url('../img/aboutus.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
+}
+
+.content section {
+  background-color: $color_turquoise;
+  margin-bottom:20px;
+    height:750px;
+}

@@ -1,0 +1,224 @@
+/** Responsive **/
+
+/** footer and pager **/
+@media (max-width: 656px) {
+
+    .custom-pager .number{
+        display: none;
+    }
+
+    .footer{
+        .logos{
+            display: block;
+        ul{
+            text-align: center;
+        }
+        ul:nth-of-type(2){
+            margin: 30px 0 0 -30px;
+        }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-bottom{
+        display: none;
+    }
+    .footer-bottom-small{
+        display: block !important;
+    }
+}
+
+/** Navbarand sidebar **/
+@media (max-width: 850px) {
+    .navbar-default{
+        margin-bottom: 40px;
+    }
+    .navbar-default .navbar-collapse {
+        border: 0;
+    }
+
+    .navbar-form{
+        display: none;
+    }
+}
+
+
+// change hamburer breakpoint to 850px
+@media (min-width: 768px) and (max-width: 850px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
+
+@media (min-width: 979px) {
+    #sidebar.affix-top {
+        position: static;
+  	    margin-top:30px;
+  	    width:228px;
+    }
+
+    #sidebar.affix {
+        position: fixed;
+        top:70px;
+        width:228px;
+    }
+}
+
+
+/** Button and carousel**/
+@media (max-width: 1110px) {
+    .button-primary span{
+        font-size: 18px !important
+    }
+    .carousel-caption{
+        .title{
+            font-size: 45px !important;
+        }
+        p{
+            font-size: 16px !important;
+            button{
+                width: 290px !important;
+                height: 45px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 868px) {
+    .carousel-inner>.item{
+        .big{
+            display: none;
+        }
+        .small{
+            display: block !important;
+        }
+        height: 300px;
+        .img-responsive{
+            height:300px;
+        }
+    }
+    .button-primary span{
+        font-size: 18px !important
+    }
+    .carousel-caption{
+        .title{
+            font-size: 35px !important;
+        }
+        p>button{
+
+            width: 240px !important;
+            height: 40px !important;
+        }
+        &#development{
+            padding-bottom: 40px !important;
+        }
+        &#outreach{
+            padding-bottom: 47px !important;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .carousel-caption p>button{
+        position: relative;
+        right: 18px;
+    }
+}
+
+/** MAP **/
+@media (max-width: 1000px) {
+    .map{
+        .map-window{
+            position: absolute;
+            left: 3%;
+            top: 0.5%;
+            height: 100%;
+            width: 25%;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .map{
+        .map-window{
+            position: relative;
+            left:0;
+            height: auto;
+            width: 100%;
+            padding-bottom: 3%;
+            .address-2{
+                margin-bottom: 2%;
+            }
+            .direction{
+                padding: 1% 0 1% 0;
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .map-img{
+        display: none;
+    }
+    .map .map-img-small{
+        display: none;;
+    }
+    .map .map-img-medium{
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .map-img{
+        display: none;
+    }
+    .map .map-img-small{
+        display: block;
+    }
+    .map .map-img-medium{
+        display: none;;
+    }
+}
+
+/** Forms **/
+@media (max-width: 587px) {
+    .search-form{
+        form{
+            width: 100%;
+            button{
+                height:45px;
+                width: 128px;
+            }
+            input{
+                height:45px;
+            }
+        }
+    }
+}
+
+/** single column breakpoint**/
+@media (max-width: 991px) {
+    #leftCol{
+        display: none;
+    }
+    .logos{
+        text-align: center;
+        .col-md-6:nth-of-type(2){
+            margin-top: 50px;
+        }
+    }
+    #datepicker{
+        margin-top: 30px;
+    }
+}

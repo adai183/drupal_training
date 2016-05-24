@@ -1,0 +1,39 @@
+custom_pages.about:
+  path: '/about'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::about'
+    _title: 'About us'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.research:
+  path: '/research'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::research'
+    _title: 'Research'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.services:
+  path: '/services'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::services'
+    _title: 'Services'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.outreach:
+  path: '/outreach'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::outreach'
+    _title: 'Outreach'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.news:
+  path: '/news'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::news'
+    _title: 'News'
+  requirements:
+    _permission: 'access content'

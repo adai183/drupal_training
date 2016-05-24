@@ -1,0 +1,6 @@
+name: Custom Pages Module
+description: Creates custom pages.
+package: Pages
+
+type: module
+core: 8.x

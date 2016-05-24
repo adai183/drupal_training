@@ -1,0 +1,13 @@
+name: TARDIS
+type: module
+description: 'Provides a View display style that renders a list of year and month links to content in reverse chronological order.'
+package: Views
+# core: '8.x'
+dependencies:
+  - views
+
+# Information added by Drupal.org packaging script on 2016-02-14
+version: '8.x-3.x-dev'
+core: '8.x'
+project: 'tardis'
+datestamp: 1455415441
