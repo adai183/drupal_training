@@ -49,5 +49,33 @@ class PagesController extends ControllerBase {
         );
     }
 
+    public function CellularMolecularBiology() {
+        return array(
+            '#theme' => 'cellularmolecularbiology',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
+    public function CellularMolecularMedicine() {
+        return array(
+            '#theme' => 'cellularmolecularmedicine',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
+    public function ChemicalPhysicalBiology() {
+        return array(
+            '#theme' => 'chemicalphysicalbiology',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
+    public function EnvironmentalBiology() {
+        return array(
+            '#theme' => 'environmentalbiology',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
 
 }

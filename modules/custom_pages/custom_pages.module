@@ -20,9 +20,17 @@ function custom_pages_theme($existing, $type, $theme, $path) {
     'news' => array(
         'variables' => array('test_var' => NULL),
     ),
-    'demo_bootstrap_tabs' => array(
-      'variables' => array('view' => NULL, 'rows' => NULL),
-      'path' => drupal_get_path('module', 'custom_pages') . '/templates',
+    'cellularmolecularbiology' => array(
+        'variables' => array('test_var' => NULL),
+    ),
+    'cellularmolecularmedicine' => array(
+        'variables' => array('test_var' => NULL),
+    ),
+    'chemicalphysicalbiology' => array(
+        'variables' => array('test_var' => NULL),
+    ),
+    'environmentalbiology' => array(
+        'variables' => array('test_var' => NULL),
     ),
   );
 }

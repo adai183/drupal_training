@@ -22,6 +22,7 @@ class ServiceEntityListBuilder extends EntityListBuilder {
   public function buildHeader() {
     $header['id'] = $this->t('Service entity ID');
     $header['name'] = $this->t('Name');
+    $header['servicetype'] = $this->t('servicetype');
     return $header + parent::buildHeader();
   }
 
@@ -39,6 +40,7 @@ class ServiceEntityListBuilder extends EntityListBuilder {
         )
       )
     );
+    $row['servicetype'] = $entity->servicetype->value;
     return $row + parent::buildRow($entity);
   }
 

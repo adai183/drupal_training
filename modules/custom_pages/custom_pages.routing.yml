@@ -37,3 +37,35 @@ custom_pages.news:
     _title: 'News'
   requirements:
     _permission: 'access content'
+
+custom_pages.CellularMolecularBiology:
+  path: '/cellular_molecular_biology'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::CellularMolecularBiology'
+    _title: 'Cellular Molecular Biology'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.CellularMolecularMedicine:
+  path: '/cellular_molecular_medicine'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::CellularMolecularMedicine'
+    _title: 'Cellular Molecular Medicine'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.ChemicalPhysicalBiology:
+  path: '/chemical_physical_biology'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::ChemicalPhysicalBiology'
+    _title: 'Chemical and Physical Biology'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.EnvironmentalBiology:
+  path: '/envoironmental_biology'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::EnvironmentalBiology'
+    _title: 'Environmental Biology'
+  requirements:
+    _permission: 'access content'

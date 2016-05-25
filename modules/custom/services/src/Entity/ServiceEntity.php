@@ -149,16 +149,16 @@ class ServiceEntity extends ContentEntityBase implements ServiceEntityInterface 
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields['id'] = BaseFieldDefinition::create('integer')
       ->setLabel(t('ID'))
-      ->setDescription(t('The ID of the Service entity entity.'))
+      ->setDescription(t('The ID of the service.'))
       ->setReadOnly(TRUE);
     $fields['uuid'] = BaseFieldDefinition::create('uuid')
       ->setLabel(t('UUID'))
-      ->setDescription(t('The UUID of the Service entity entity.'))
+      ->setDescription(t('The UUID of the service.'))
       ->setReadOnly(TRUE);
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
-      ->setDescription(t('The user ID of author of the Service entity entity.'))
+      ->setDescription(t('The user ID of author of the service.'))
       ->setRevisionable(TRUE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
@@ -184,7 +184,7 @@ class ServiceEntity extends ContentEntityBase implements ServiceEntityInterface 
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Service entity entity.'))
+      ->setDescription(t('The name of the Service.'))
       ->setSettings(array(
         'max_length' => 50,
         'text_processing' => 0,
@@ -201,6 +201,27 @@ class ServiceEntity extends ContentEntityBase implements ServiceEntityInterface 
       ))
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+    $fields['servicetype'] = BaseFieldDefinition::create('list_string')
+        ->setLabel(t('Service type'))
+        ->setDescription(t('The type of the service.'))
+        ->setSettings(array(
+          'allowed_values' => array(
+            'external' => 'external',
+            'internal' => 'internal',
+          ),
+        ))
+        ->setDisplayOptions('view', array(
+          'label' => 'above',
+          'type' => 'string',
+          'weight' => -4,
+        ))
+        ->setDisplayOptions('form', array(
+          'type' => 'options_select',
+          'weight' => -4,
+        ))
+        ->setDisplayConfigurable('form', TRUE)
+        ->setDisplayConfigurable('view', TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
