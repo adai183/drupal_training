@@ -1,0 +1,5 @@
+name: services
+type: module
+description: Provides service content entity
+core: 8.x
+package: Custom

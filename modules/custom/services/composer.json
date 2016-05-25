@@ -1,0 +1,14 @@
+{
+  "name": "drupal/services",
+  "type": "drupal-module",
+  "description": "Provides service content entity",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/services",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/services",
+    "source": "http://cgit.drupalcode.org/services"
+  },
+  "require": { }
+}

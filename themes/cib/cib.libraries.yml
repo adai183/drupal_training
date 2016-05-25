@@ -1,7 +1,11 @@
 global-styling:
-  css:
-    theme:
-      css/style.css: {}
+    css:
+        theme:
+            css/style.css: {}
+    js:
+        js/chart.js: {}
+    dependencies:
+        - core/jquery
 
 
 google-fonts:

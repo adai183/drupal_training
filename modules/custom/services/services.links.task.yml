@@ -1,0 +1,21 @@
+# Service entity routing definition
+service_entity.settings_tab:
+  route_name: service_entity.settings
+  title: 'Settings'
+  base_route: service_entity.settings
+entity.service_entity.canonical:
+  route_name: entity.service_entity.canonical
+  base_route: entity.service_entity.canonical
+  title: 'View'
+
+entity.service_entity.edit_form:
+  route_name: entity.service_entity.edit_form
+  base_route: entity.service_entity.canonical
+  title: Edit
+
+entity.service_entity.delete_form:
+  route_name:  entity.service_entity.delete_form
+  base_route:  entity.service_entity.canonical
+  title: Delete
+  weight: 10
+

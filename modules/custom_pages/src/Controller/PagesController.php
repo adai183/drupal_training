@@ -18,6 +18,10 @@ class PagesController extends ControllerBase {
     }
 
     public function research() {
+
+        // Returns a Drupal\Core\Database\Connection object.
+        $connection = \Drupal::database();
+
         return array(
             '#theme' => 'research',
             '#test_var' => $this->t('Test Value'),

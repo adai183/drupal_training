@@ -1,0 +1,19 @@
+add service entity entities:
+  title: 'Create new Service entity entities'
+
+administer service entity entities:
+  title: 'Administer Service entity entities'
+  description: 'Allow to access the administration form to configure Service entity entities.'
+  restrict access: true
+
+delete service entity entities:
+  title: 'Delete Service entity entities'
+
+edit service entity entities:
+  title: 'Edit Service entity entities'
+
+view published service entity entities:
+  title: 'View published Service entity entities'
+
+view unpublished service entity entities:
+  title: 'View unpublished Service entity entities'
