@@ -1,3 +1,4 @@
+# primary views
 custom_pages.about:
   path: '/about'
   defaults:
@@ -38,6 +39,7 @@ custom_pages.news:
   requirements:
     _permission: 'access content'
 
+# research departments
 custom_pages.CellularMolecularBiology:
   path: '/cellular_molecular_biology'
   defaults:
@@ -67,5 +69,24 @@ custom_pages.EnvironmentalBiology:
   defaults:
     _controller: '\Drupal\custom_pages\Controller\PagesController::EnvironmentalBiology'
     _title: 'Environmental Biology'
+  requirements:
+    _permission: 'access content'
+
+custom_pages.MolmicroinfecBio:
+  path: '/molecular_microbiology_infection_biology'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::MolmicroinfecBio'
+    _title: 'Molecular and Microbiology Infection Biology'
+  requirements:
+    _permission: 'access content'
+
+# research groups
+# Cellular and Molecular Biology
+
+custom_pages.Aspergillus:
+  path: '/aspergillus_molecular_genetics'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\PagesController::Aspergillus'
+    _title: 'Aspergillus Molecular Genetics'
   requirements:
     _permission: 'access content'

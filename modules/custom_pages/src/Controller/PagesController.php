@@ -77,5 +77,19 @@ class PagesController extends ControllerBase {
         );
     }
 
+    public function MolmicroinfecBio() {
+        return array(
+            '#theme' => 'molmicroinfecbio',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
+    public function Aspergillus() {
+        return array(
+            '#theme' => 'aspergillus',
+            '#test_var' => $this->t('Test Value'),
+        );
+    }
+
 
 }

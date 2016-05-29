@@ -32,5 +32,11 @@ function custom_pages_theme($existing, $type, $theme, $path) {
     'environmentalbiology' => array(
         'variables' => array('test_var' => NULL),
     ),
+    'molmicroinfecbio' => array(
+        'variables' => array('test_var' => NULL),
+    ),
+    'aspergillus' => array(
+        'variables' => array('test_var' => NULL),
+    ),
   );
 }
