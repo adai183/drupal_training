@@ -1,0 +1,12 @@
+services.service_detail_view.*:
+  type: config_entity
+  label: 'Service detail view config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
