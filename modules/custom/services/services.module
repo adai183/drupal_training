@@ -16,7 +16,7 @@ function services_help($route_name, RouteMatchInterface $route_match) {
     case 'help.page.services':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Provides service content entity') . '</p>';
+      $output .= '<p>' . t('provides a custom service content type') . '</p>';
       return $output;
 
     default:

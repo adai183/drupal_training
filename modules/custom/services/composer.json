@@ -1,7 +1,7 @@
 {
   "name": "drupal/services",
   "type": "drupal-module",
-  "description": "Provides service content entity",
+  "description": "provides a custom service content type",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
   "homepage": "https://www.drupal.org/project/services",
