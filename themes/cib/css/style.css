@@ -292,7 +292,7 @@ input:focus {
   background-color: #ec111a; }
 
 .jumbotron {
-  height: 160px;
+  height: auto;
   border-bottom: solid 3px #e72b22;
   font-family: "Roboto Slab", serif;
   font-size: 40px;
@@ -300,10 +300,10 @@ input:focus {
   color: #333333; }
   .jumbotron.dep1 {
     background-image: url("../img/i-l-u.png");
-    border-bottom: solid 3px #7cbaf3; }
+    border-bottom: solid 3px #c08de0; }
   .jumbotron.dep2 {
     background-image: url("../img/group-10.png");
-    border-bottom: solid 3px #C1C1C1; }
+    border-bottom: solid 3px #7cbaf3; }
   .jumbotron.dep3 {
     background-image: url("../img/group-32-group-38-mask.png");
     border-bottom: solid 3px  #b6d017; }
@@ -318,11 +318,42 @@ input:focus {
     background-repeat: no-repeat;
     background-position: center;
     color: #ffffff; }
+  .jumbotron.news {
+    background-image: url("../img/News.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff; }
+  .jumbotron.research {
+    background-image: url("../img/Research.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff; }
+  .jumbotron.services {
+    background-image: url("../img/Services.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff; }
+  .jumbotron.outreach {
+    background-image: url("../img/Outreach.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff; }
+  .jumbotron.training {
+    background-image: url("../img/training.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #ffffff; }
 
 .content section {
   background-color: #00c7ab;
   margin-bottom: 20px;
   height: 750px; }
+
+.service-item a {
+  color: #333333; }
+
+img[alt="description"] {
+  margin-left: 1%; }
 
 /** Navbar **/
 .nav-top .dropdown button {
@@ -332,17 +363,30 @@ input:focus {
   color: #999999; }
 
 .navbar-default {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-top: 12px;
   background-color: #ffffff;
   border-bottom: 0;
   /** Change placeholder color for most browsers **/ }
   .navbar-default .navbar-nav > li > a {
     padding-top: 30px; }
-  .navbar-default .navbar-nav .mcib-img {
-    padding-top: 25px; }
-    .navbar-default .navbar-nav .mcib-img img {
-      height: 27px; }
+  .navbar-default .navbar-nav .mcib-img img {
+    height: 20px; }
+  .navbar-default .dropdown-menu {
+    border: 0;
+    min-width: 0px !important;
+    background-color: #ffffff !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
+    border-top: solid 1px #f0f0f0; }
+    .navbar-default .dropdown-menu li {
+      height: 60px; }
+      .navbar-default .dropdown-menu li:nth-child(2) {
+        border-top: solid 1px #f0f0f0; }
+      .navbar-default .dropdown-menu li:hover {
+        background-color: #f5f5f5; }
+      .navbar-default .dropdown-menu li a {
+        padding-top: 20px; }
   .navbar-default .navbar-nav > li > form {
     padding-top: 18px; }
     .navbar-default .navbar-nav > li > form input {
@@ -360,6 +404,9 @@ input:focus {
     color: #ffffff; }
   .navbar-default .form-control:-ms-input-placeholder {
     color: #ffffff; }
+
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #ffffff; }
 
 /** Bootsrap Scrollspy **/
 #sidebar .affix-top, #sidebar .affix {
@@ -642,11 +689,12 @@ input:focus {
       font-size: 16px;
       line-height: 1.8;
       color: #00c7ab; }
-.events .calendar .ui-state-active {
+
+.calendar .ui-state-active {
   color: #00c7ab !important;
   border: 0;
   background-color: #ffffff; }
-  .events .calendar .ui-state-active a {
+  .calendar .ui-state-active a {
     color: #333333 !important;
     border-bottom: 3px solid #00c7ab; }
 
@@ -790,9 +838,9 @@ input:focus {
   .departments .subtitle a {
     color: #333333; }
 .departments #dep1 img {
-  border-bottom: 3px solid  #7cbaf3; }
+  border-bottom: 3px solid  #c08de0; }
 .departments #dep2 img {
-  border-bottom: 3px solid  #C1C1C1; }
+  border-bottom: 3px solid  #7cbaf3; }
 .departments #dep3 img {
   border-bottom: 3px solid   #b6d017; }
 .departments #dep4 img {
@@ -802,7 +850,8 @@ input:focus {
 
 /** RESEARCH DEPARTMENT **/
 .members .boss {
-  display: -webkit-box; }
+  display: -webkit-box;
+  margin-top: 25px; }
   .members .boss .title {
     margin-left: 5px;
     font-family: "Roboto Slab", serif;
@@ -814,6 +863,8 @@ input:focus {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #333333; }
+  .members .boss img {
+    border-radius: 50%; }
 
 .staff .title {
   margin-bottom: 15px;

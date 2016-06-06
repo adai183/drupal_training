@@ -263,7 +263,7 @@ input{
 }
 
 .jumbotron{
-    height: 160px;
+    height: auto;
     border-bottom: solid 3px #e72b22;
     font-family: $font_roboto;
 	font-size: $font_size_1;
@@ -271,11 +271,11 @@ input{
 	color: $color_dark_grey;
     &.dep1{
         background-image: url('../img/i-l-u.png');
-        border-bottom: solid 3px #7cbaf3;;
+        border-bottom: solid 3px #c08de0;;
     }
     &.dep2{
         background-image: url('../img/group-10.png');
-        border-bottom: solid 3px #C1C1C1;
+        border-bottom: solid 3px #7cbaf3;
     }
     &.dep3{
         background-image: url('../img/group-32-group-38-mask.png');
@@ -295,10 +295,54 @@ input{
         background-position: center;
         color: $color_white;
     }
+    &.news{
+        background-image: url('../img/News.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
+    &.research{
+        background-image: url('../img/Research.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
+    &.services{
+        background-image: url('../img/Services.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
+    &.outreach{
+        background-image: url('../img/Outreach.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
+    &.training{
+        background-image: url('../img/training.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        color: $color_white;
+    }
 }
 
 .content section {
   background-color: $color_turquoise;
   margin-bottom:20px;
     height:750px;
+}
+
+// ** Template specific ** //
+
+// Facility
+
+.service-item a {
+    color: $color_dark_grey;
+}
+
+// Facility Detail
+
+img[alt="description"] {
+  margin-left: 1%;
 }

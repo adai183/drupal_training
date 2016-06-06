@@ -1,0 +1,45 @@
+<main class="container-fluid">
+
+    <div class="jumbotron text-center">
+        {{ label }}
+    </div>
+
+    <!-- sticky sidebar -->
+    <div class="row">
+			<div class="col-md-3" id="leftCol">
+
+          	<ul class="nav nav-stacked" id="sidebar">
+                <li>
+                    <a href="#sec0">DESCRIPTION</a>
+                </li>
+                <li>
+                    <a href="#sec1">MEMBERS</a>
+                </li>
+                <li>
+                    <a href="#sec2">MORE INFO</a>
+                </li>
+                <li>
+                    <a href="#sec3">REQUEST</a>
+                </li>
+                <li>
+                    <a href="#sec4">LINKS</a>
+                </li>
+          	</ul>
+
+  		</div>
+
+        <!-- Page content -->
+        <div class="col-md-9">
+
+            <div id="sec0" class="row top-link margin-bottom-3">
+                <div class="col-md-12">
+                    <a href="index.php">Home</a>
+                    |  <a href="/facilities">Facilities</a>
+                    |  <a href="#">{{ label }}</a>
+                </div>
+            </div>
+
+            {{ content }}
+
+    </div>
+</main>

@@ -202,6 +202,27 @@ class ServiceEntity extends ContentEntityBase implements ServiceEntityInterface 
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['servicetype'] = BaseFieldDefinition::create('list_string')
+          ->setLabel(t('Service type'))
+          ->setDescription(t('The type of the service.'))
+          ->setSettings(array(
+            'allowed_values' => array(
+              'external' => 'external',
+              'internal' => 'internal',
+            ),
+          ))
+          ->setDisplayOptions('view', array(
+            'label' => 'above',
+            'type' => 'string',
+            'weight' => -4,
+          ))
+          ->setDisplayOptions('form', array(
+            'type' => 'options_select',
+            'weight' => -4,
+          ))
+          ->setDisplayConfigurable('form', TRUE)
+          ->setDisplayConfigurable('view', TRUE);
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the Service entity is published.'))
