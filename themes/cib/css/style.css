@@ -355,6 +355,14 @@ input:focus {
 img[alt="description"] {
   margin-left: 1%; }
 
+.member-info .field {
+  margin-bottom: 20px; }
+
+.member-label {
+  font-size: 20px;
+  color: #333333;
+  font-family: "Roboto Slab", serif; }
+
 /** Navbar **/
 .nav-top .dropdown button {
   border: 0;

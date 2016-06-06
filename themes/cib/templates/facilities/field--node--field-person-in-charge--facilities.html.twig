@@ -1,0 +1,21 @@
+<div id="sec1" class="row section-title">
+    <div class="col-md-12">
+        <span class="marker"></span>
+        <span>MEMBERS</span>
+    </div>
+</div>
+
+
+<div class="row members margin-top-2">
+    <div class="col-md-12">
+        <div class="margin-bottom-1">
+            {{ label }}
+        </div>
+        {% for item in items %}
+
+            {{ item.content }}
+
+        {% endfor %}
+
+    </div>
+</div>
