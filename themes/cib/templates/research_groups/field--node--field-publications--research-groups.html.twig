@@ -1,0 +1,16 @@
+<div id="sec3" class="row section-title">
+    <div class="col-md-12">
+        <span class="marker" style="background-color: #c08de0;"></span>
+        <span>PUBLICATIONS</span>
+    </div>
+</div>
+
+{% for item in items %}
+<div class="row margin-top-1">
+    <div class="col-md-12">
+        <span style="margin-left:10px;">
+            {{ item.content }}
+        </span>
+    </div>
+</div>
+{% endfor %}

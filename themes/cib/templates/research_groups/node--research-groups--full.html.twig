@@ -1,0 +1,59 @@
+<main class="container-fluid">
+
+    <div class="jumbotron text-center dep1 ">
+        {{ label }}
+    </div>
+
+    <!-- sticky sidebar -->
+    <div class="row">
+			<div class="col-md-3" id="leftCol">
+
+          	<ul class="nav nav-stacked" id="sidebar">
+                <li>
+                    <a href="#sec0">DESCRIPTION</a>
+                </li>
+                <li>
+                    <a href="#sec1">MEMBERS</a>
+                </li>
+                <li>
+                    <a href="#sec2">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="#sec3">PUBLICATIONS</a>
+                </li>
+                <li>
+                    <a href="#sec4">FUNDING</a>
+                </li>
+          	</ul>
+
+  		</div>
+
+        <!-- Page content -->
+        <div class="col-md-9">
+
+            <div id="sec0" class="row margin-bottom-3">
+                <div class="col-md-12 top-link">
+                    <a href="index.php">Home</a>
+                    <a href="../research"> | Research</a>
+                    <a href="../research"> | Departments</a>
+                    <a href="#" style="color: #c08de0;"> | {{ label }} </a>
+                </div>
+            </div>
+
+            {{ content }}
+
+            <div class="row margin-top-5">
+                <div class="col-md-12">
+                    <span class="input-group-btn">
+                        <a href="{{ base_path }}/drupal8.dev/research">
+                            <button class="btn btn-default button-secondary" type="submit">Back</button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
