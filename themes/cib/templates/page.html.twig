@@ -1,5 +1,25 @@
 {% include 'nav.html.twig' %}
 
-{{ page.content }}
+<div class="container-fluid">
+
+    {# Main #}
+    {% block main %}
+      <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+        <div class="row">
+
+
+          <section class="col-md-12">
+            {# Content #}
+            {% block content %}
+              <a id="main-content"></a>
+              {{ page.content }}
+            {% endblock %}
+          </section>
+
+        </div>
+      </div>
+    {% endblock %}
+
+</div>
 
 {% include 'footer.html.twig' %}

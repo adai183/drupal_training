@@ -360,3 +360,74 @@ img[alt="description"] {
     color: $color_dark_grey;
     font-family: $font_roboto;
 }
+
+// Research groups
+
+img[alt="description-picture"] {
+  width: 100%;
+}
+
+// Search
+
+.well{
+    background-color: $color_white;
+    border: 0;
+}
+
+.form-item{
+    margin-top: 10px;
+    
+        max-width: 900px;
+        /** Change placeholder color for most browsers **/
+        .form-control::-webkit-input-placeholder { color: $color_clear_grey; }
+        .form-control:-moz-placeholder { color: $color_clear_grey; }
+        .form-control::-moz-placeholder { color: $color_clear_grey; }
+        .form-control:-ms-input-placeholder { color: $color_clear_grey; }
+
+        input{
+            height: 60px;
+	        border: solid 1px $color_clear_grey;
+            border-right: 0;
+            font-family: $font_open_sans;
+        	font-size: $font_size_2;
+        	line-height: 1.5;
+        }
+        .input-group-btn{
+            outline: initial;
+        }
+        button{
+            z-index: 99999;
+            width: 170px;
+        	height: 60px;
+        	border-radius: 30px;
+        	background-color: $color_white;;
+        	border: solid 1px $color_turquoise;
+            font-family: $font_open_sans;
+        	font-size: $font_size_2;
+        	line-height: 1.4;
+        	color: $color_turquoise;
+            &:hover{
+                opacity: 0.8;
+                border-radius: 30px;
+            	background-color: $color_white;;
+            	border: solid 1px $color_turquoise;
+                font-family: $font_open_sans;
+            	font-size: $font_size_2;
+            	line-height: 1.4;
+            	color: $color_turquoise;
+            }
+            &:focus{
+                border-radius: 30px;
+            	background-color: $color_white;;
+            	border: solid 1px $color_turquoise;
+                font-family: $font_open_sans;
+            	font-size: $font_size_2;
+            	line-height: 1.4;
+            	color: $color_turquoise;
+            }
+            img{
+                margin-right: 10px;
+            }
+        }
+
+}
