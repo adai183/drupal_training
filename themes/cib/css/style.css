@@ -370,28 +370,28 @@ img[alt="description-picture"] {
   background-color: #ffffff;
   border: 0; }
 
-.form-item {
+.front-search .form-item {
   margin-top: 10px;
   max-width: 900px;
   /** Change placeholder color for most browsers **/ }
-  .form-item .form-control::-webkit-input-placeholder {
+  .front-search .form-item .form-control::-webkit-input-placeholder {
     color: #cccccc; }
-  .form-item .form-control:-moz-placeholder {
+  .front-search .form-item .form-control:-moz-placeholder {
     color: #cccccc; }
-  .form-item .form-control::-moz-placeholder {
+  .front-search .form-item .form-control::-moz-placeholder {
     color: #cccccc; }
-  .form-item .form-control:-ms-input-placeholder {
+  .front-search .form-item .form-control:-ms-input-placeholder {
     color: #cccccc; }
-  .form-item input {
+  .front-search .form-item input {
     height: 60px;
     border: solid 1px #cccccc;
     border-right: 0;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     line-height: 1.5; }
-  .form-item .input-group-btn {
+  .front-search .form-item .input-group-btn {
     outline: initial; }
-  .form-item button {
+  .front-search .form-item button {
     z-index: 99999;
     width: 170px;
     height: 60px;
@@ -402,24 +402,11 @@ img[alt="description-picture"] {
     font-size: 20px;
     line-height: 1.4;
     color: #00c7ab; }
-    .form-item button:hover {
-      opacity: 0.8;
-      border-radius: 30px;
-      background-color: #ffffff;
-      border: solid 1px #00c7ab;
-      font-family: "Open Sans", sans-serif;
-      font-size: 20px;
-      line-height: 1.4;
-      color: #00c7ab; }
-    .form-item button:focus {
-      border-radius: 30px;
-      background-color: #ffffff;
-      border: solid 1px #00c7ab;
-      font-family: "Open Sans", sans-serif;
-      font-size: 20px;
-      line-height: 1.4;
-      color: #00c7ab; }
-    .form-item button img {
+    .front-search .form-item button:focus {
+      background-color: #ffffff; }
+    .front-search .form-item button:hover {
+      opacity: 0.8; }
+    .front-search .form-item button img {
       margin-right: 10px; }
 
 /** Navbar **/

@@ -164,9 +164,13 @@
           <div role="main" class="main-container {{ container }} js-quickedit-main-content">
             <div class="row">
 
-
               <section class="col-md-12">
-                {{ page.sidebar_second }}
+
+                <div class="front-search">
+                    {# Content #}
+                    {{ page.sidebar_second }}
+                </div>
+
                 {# Content #}
                 {% block content %}
                   <a id="main-content"></a>
@@ -177,6 +181,22 @@
             </div>
           </div>
         {% endblock %}
+
+        <div class="row section-title margin-top-3">
+            <div class="col-md-12 title">
+                <span class="marker"></span>
+                <span>EVENTS</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="margin-top-2">
+                    This section is currently under development. <br>
+                    Please visit our <a href="{{ base_path }}events-calendar/month/">OUTREACH</a> section to see our event calendar.
+                </p>
+            </div>
+        </div>
 
 
         <div class="row section-title margin-top-5">
