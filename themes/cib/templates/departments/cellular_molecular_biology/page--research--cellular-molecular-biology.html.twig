@@ -1,0 +1,197 @@
+{% include 'nav.html.twig' %}
+
+<main class="container-fluid">
+
+    <div class="jumbotron text-center dep1 ">
+            CELLULAR AND MOLECULAR BIOLOGY
+    </div>
+
+    <!-- sticky sidebar -->
+    <div class="row">
+			<div class="col-md-3" id="leftCol">
+
+          	<ul class="nav nav-stacked" id="sidebar">
+                <li>
+                    <a href="#sec0">DESCRIPTION</a>
+                </li>
+                <li>
+                    <a href="#sec1">GROUPS</a>
+                </li>
+                <li>
+                    <a href="#sec2">SEMINARS</a>
+                </li>
+          	</ul>
+
+  		</div>
+
+        <!-- Page content -->
+        <div class="col-md-9">
+
+            <div id="sec0" class="row margin-bottom-3">
+                <div class="col-md-12 top-link">
+                    <a href="../">Home</a>
+                    <a href="../research"> | Research</a>
+                    <a href="../research"> | Departments</a>
+                    <a href="#" style="color: #c08de0;"> | CELLULAR AND MOLECULAR BIOLOGY</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        The cell is the basic unit of life and furthering our knowledge of biology requires a fundamental understanding of cellular structure and function. The CELL PROLIFERATION AND DEVELOPMENT Line comprises a group of independent and highly interactive laboratories aiming at an understanding of important processes in cell replication and diversification. Cell proliferation is an attribute of all life forms closely linked to processes of growth and division, and in multicellular organisms is also linked to the appearance of specialized cell types. A multiplicity of regulatory mechanism has been evolutively selected to ensure regulated cell proliferation and generation of cell diversity during embryonic and adult phases of life cycles. Alterations in these regulatory networks are a hallmark of major human disorders. Research topics tackled by the different labs are grouped into two research Sublines, “Chromosome dynamics” and “Genetic and epigenetic regulation of cell identity” using a variety of model organisms, e.g. mammals, flies, plants, yeast, bacteria, etc. A unifying feature that brings strength and coherence to this Line is our conviction that the answer to these fundamental curiosity-driven questions of basic cell and molecular biology lies at the heart of the potential applications that may arise from the knowledge obtained. However, while our pursuit is stimulated and guided by the goal of understanding basic processes, we do not stray from furthering our discoveries as potential mechanisms that may lead to more technical applications. This feature makes us unique and different from other research lines in the CIB.
+                    </p>
+                </div>
+            </div>
+
+            <div id="sec1" class="row section-title">
+                <div class="col-md-12">
+                    <span class="marker" style="background-color: #c08de0;"></span>
+                    <span>GROUPS</span>
+                </div>
+            </div>
+
+            {# Main #}
+            {% block main %}
+              <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+                <div class="row">
+
+                  <section class="col-md-12">
+
+
+
+                    {# Content #}
+                    {% block content %}
+                      <a id="main-content"></a>
+                      {{ page.content }}
+                    {% endblock %}
+                  </section>
+
+                </div>
+              </div>
+            {% endblock %}
+
+            <div id="sec2" class="row section-title">
+                <div class="col-md-12">
+                    <span class="marker" style="background-color: #c08de0;"></span>
+                    <span>SEMINARS</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 calendar-detail">
+                    <div class="col-md-4 left">
+                        <div class="date">
+                            24 JUN 2018 · 12:00 am
+                        </div>
+                        <div class="title">
+                            Place
+                        </div>
+                        <div class="subtitle">
+                            Lecture Hall of CIB
+                        </div>
+                        <div class="title">
+                            CIB contact
+                        </div>
+                        <div class="contact">
+                            <span><img src="{{ base_path ~ directory }}/img/User.svg" /></span>
+                            <span>De la Rosa Cano, Enrique J.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 right" style="padding-bottom: 22px;">
+                        <div class="topic">
+                            Dpto. Biología Celular y Molecular: When to decide to divide: a Soxist point of view.
+                        </div>
+                        <div class="title">
+                            Speaker
+                        </div>
+                        <div class="subtitle">
+                            Aixa Morales  ·  Instituto Cajal
+                        </div>
+                        <div class="title">
+                            Department
+                        </div>
+                        <div class="department">
+                            <a href="cellular_molecular_biology.php">
+                                CELLULAR AND MOLECULAR BIOLOGY
+                            </a>
+                        </div>
+                        <!--div class="title">
+                            Poster
+                        </div>
+                        <div class="poster">
+                            <a href="#">
+                                <img src="img/print.svg" alt="" />
+                            </a>
+                        </div-->
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 calendar-detail">
+                    <div class="col-md-4 left">
+                        <div class="date">
+                            1 JUN 2016 · 12:00 am
+                        </div>
+                        <div class="title">
+                            Place
+                        </div>
+                        <div class="subtitle">
+                            Lecture Hall of CIB
+                        </div>
+                        <div class="title">
+                            CIB contact
+                        </div>
+                        <div class="contact">
+                            <span><img src="{{ base_path ~ directory }}/img/User.svg" /></span>
+                            <span>Boya , Patricia</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8 right" style="padding-bottom: 22px;">
+                        <div class="topic">
+                            Dpto. Biología Celular y Molecular: Autophagy during development and differentiation.
+                        </div>
+                        <div class="title">
+                            Speaker
+                        </div>
+                        <div class="subtitle">
+                            Lorena Esteban Martínez ·  CIB CSIC
+                        </div>
+                        <div class="title">
+                            Department
+                        </div>
+                        <div class="department">
+                            <a href="cellular_molecular_biology.php">
+                                CELLULAR AND MOLECULAR BIOLOGY
+                            </a>
+                        </div>
+                        <!--div class="title">
+                            Poster
+                        </div>
+                        <div class="poster">
+                            <a href="#">
+                                <img src="img/print.svg" alt="" />
+                            </a>
+                        </div-->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row margin-top-5">
+                <div class="col-md-12">
+                    <span class="input-group-btn">
+                        <a href="../research">
+                            <button class="btn btn-default button-secondary" type="submit">Back</button>
+                        </a>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+{% include 'footer.html.twig' %}
